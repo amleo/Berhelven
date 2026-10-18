@@ -65,7 +65,7 @@
 }
 @media screen and (max-width: 479px) {
     .hero-video-player {
-        margin-left: auto;
+        margin-left: 2vh;
     }
 
     .video-container {
@@ -81,7 +81,7 @@
 }
 @media screen and (max-width: 771px) {
     .hero-video-player {
-        margin-left: auto;
+        margin-left: 3vh;
     }
 
     .video-container {
