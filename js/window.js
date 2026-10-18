@@ -1,0 +1,39 @@
+function showInfo(person) {
+    // Get the modal
+    var modal = document.getElementById(person);
+
+    // Get the <span> element that closes the modal
+    //var span = document.getElementsByClassName("modal-close_btn")[0];
+    var span = document.getElementById(`${person}Close`);
+    // When the user clicks the button, open the modal 
+    //				btn.onclick = function() {
+    modal.style.display = "block";
+    modal.style.opacity = 1;
+    //--------------------
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (
+        event.target === modal ||
+        event.target.classList.contains("modal-close_area")
+    ) {
+        modal.style.display = "none";
+    }
+};
+    window.onkeyup = function (event) {
+        if (event.key == "Enter") {
+            modal.style.display = "none";
+            //closeOnEnter();
+        }
+    }
+}
+//**************************END OF function showInfo(person, errText)
+function closeOnEnter() {
+    var modal = document.getElementById("modalOK");
+    modal.style.display = "none";
+}

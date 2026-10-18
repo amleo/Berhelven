@@ -1,0 +1,95 @@
+/* Kontener nadrzędny, który trzyma wideo i przyciski razem */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    /* Dostosuj szerokość do swoich potrzeb */
+    margin: 0 auto;
+}
+
+.hero-video-player {
+    display: block;
+    width: 85%;
+    height: auto;
+    min-width: 0;
+    aspect-ratio: 4 / 7;
+    object-fit: cover;
+    clip-path: url(#coffin-clip);
+}
+
+/* Stylizacja paska sterowania – uniesiony lekko nad dolną krawędź trumny */
+.custom-controls {
+    position: absolute;
+    bottom: 40px;
+    /* Podnosimy kontrolki wyżej, w bezpieczne, szersze miejsce trumny */
+    left: 42%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    width: 69%;
+    /* Dopasowanie do zwężającego się dołu trumny */
+    justify-content: space-between;
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    color: rgb(206, 180, 180);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.volume-icon {
+    color: rgb(206, 180, 180);
+    font-size: 14px;
+}
+
+/* Prosty suwak głośności */
+.volume-slider {
+    width: 60px;
+    cursor: pointer;
+    accent-color: #3498db;
+    /* Kolor suwaka możesz zmienić na swoją zmienną CSS */
+}
+@media screen and (max-width: 479px) {
+    .hero-video-player {
+        margin-left: auto;
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        /* max-width: 400px; */
+
+    }
+    .custom-controls {
+    left: 50%;
+    }
+
+}
+@media screen and (max-width: 771px) {
+    .hero-video-player {
+        margin-left: auto;
+    }
+
+    .video-container {
+        max-width: 400px;
+
+    }
+    .custom-controls {
+    left: 50%;
+    }
+
+}

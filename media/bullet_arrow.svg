@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3 Copy</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-01" transform="translate(-170.000000, -4579.000000)">
+            <g id="Group-11" transform="translate(170.000000, 4332.000000)">
+                <g id="Group-3-Copy" transform="translate(0.000000, 247.000000)">
+                    <circle id="Oval-Copy-6" stroke="#FFFFFF" stroke-width="2" cx="30" cy="30" r="29"></circle>
+                    <g id="Group-5" transform="translate(12.000000, 10.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                        <path d="M14.5066271,32.004108 C14.1084697,32.0063878 13.7257784,31.8498759 13.4430886,31.5691201 C13.1595093,31.2874943 13,30.9041333 13,30.5042113 C13,30.1042892 13.1595093,29.7209282 13.4430886,29.4393024 L22.8801201,20.0051099 L13.4430886,10.5709174 C12.8557125,9.98278446 12.8557125,9.0292326 13.4430886,8.44109969 C14.0304647,7.85296678 14.9827894,7.85296677 15.5701655,8.44109967 L26.055756,18.940201 C26.3393353,19.2218268 26.4988446,19.6051878 26.4988446,20.0051099 C26.4988446,20.405032 26.3393353,20.788393 26.055756,21.0700188 L15.5701655,31.5691201 C15.2874758,31.8498759 14.9047844,32.0063878 14.5066271,32.004108 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

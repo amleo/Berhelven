@@ -1,0 +1,77 @@
+        /* STYLIZACJA POPUPU */
+        .subtle-popup {
+            position: fixed;
+            top: 200px; /* Wyższa pozycja na ekranie */
+            right: -400px; /* Domyślnie schowany za prawą krawędzią */
+            width: 320px;
+            background-color: #141414;
+            border-left: 4px solid #8b0000;
+            
+            /* Dodane mocniejsze, wielowarstwowe cienie dla efektu 3D i mrocznego klimatu */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), 
+                        0 4px 10px rgba(0, 0, 0, 0.7), 
+                        0 0 15px rgba(139, 0, 0, 0.3);
+            
+            padding: 20px;
+            border-radius: 4px 0 0 4px;
+            z-index: 1000;
+            transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        /* Klasa aktywująca popup - wysunięcie do prawej krawędzi */
+        .subtle-popup.active {
+            left: 20px;
+        }
+
+        /* Przycisk zamknięcia (X) */
+        .close-popup-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            color: #666;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .close-popup-btn:hover {
+            color: #ff0000;
+        }
+
+        /* Zawartość tekstowa */
+        .subtle-popup h3 {
+            margin: 0 0 10px 0;
+            color: #ff0000;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-right: 15px;
+        }
+
+        .subtle-popup p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        .subtle-popup .concert-date {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Link do biletów */
+        .ticket-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #fff;
+            background-color: #8b0000;
+            text-decoration: none;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: background 0.2s;
+        }
+        .ticket-link:hover {
+            background-color: #ff0000;
+        }

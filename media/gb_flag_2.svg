@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>gb_flag</title>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Oval" fill="#FFFFFF" cx="30" cy="30" r="29"></circle>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Oval"></g>
+            <polygon id="Path" fill="#BD1F38" fill-rule="nonzero" mask="url(#mask-2)" points="46.4309146 22.3728814 81.99 2.75452712 81.99 0 79.537292 0 38.99 22.3728814"></polygon>
+            <polygon id="Path" fill="#BD1F38" fill-rule="nonzero" mask="url(#mask-2)" points="44.99 39.6610169 81.99 60 81.99 55.9281618 52.3838299 39.6610169"></polygon>
+            <polygon id="Path" fill="#BD1F38" fill-rule="nonzero" mask="url(#mask-2)" points="-24.01 4.03300875 8.4155992 21.3559322 15.99 21.3559322 -24.01 0"></polygon>
+            <polygon id="Path" fill="#BD1F38" fill-rule="nonzero" mask="url(#mask-2)" points="13.557195 38.6440678 -24.01 59.6390837 -24.01 60 -17.22847 60 20.99 38.6440678"></polygon>
+            <polygon id="Path" fill="#2D2F76" fill-rule="nonzero" mask="url(#mask-2)" points="74.99 0 37.99 0 37.99 20.3389831"></polygon>
+            <polygon id="Path" fill="#2D2F76" fill-rule="nonzero" mask="url(#mask-2)" points="20.99 0 -16.01 0 20.99 20.3389831"></polygon>
+            <polygon id="Path" fill="#2D2F76" fill-rule="nonzero" mask="url(#mask-2)" points="81.99 22.3728814 81.99 8.13559322 56.99 22.3728814"></polygon>
+            <polygon id="Path" fill="#2D2F76" fill-rule="nonzero" mask="url(#mask-2)" points="81.99 53.8983051 81.99 39.6610169 56.99 39.6610169"></polygon>
+            <polygon id="Path" fill="#2D2F76" fill-rule="nonzero" mask="url(#mask-2)" points="-14.01 60 21.99 60 21.99 40.6779661"></polygon>
+            <polygon id="Path" fill="#2D2F76" fill-rule="nonzero" mask="url(#mask-2)" points="36.99 60 72.99 60 36.99 40.6779661"></polygon>
+            <polygon id="Path" fill="#2D2F76" fill-rule="nonzero" mask="url(#mask-2)" points="-24.01 39.6610169 -24.01 53.8983051 2.99 39.6610169"></polygon>
+            <polygon id="Path" fill="#2D2F76" fill-rule="nonzero" mask="url(#mask-2)" points="-24.01 21.3559322 2.99 21.3559322 -24.01 7.11864407"></polygon>
+            <polygon id="Path" fill="#BD1F38" fill-rule="nonzero" mask="url(#mask-2)" points="24.5147163 0 24.5147163 25.6902882 -24.01 25.6902882 -24.01 36.5638988 24.5147163 36.5638988 24.5147163 60 34.3419908 60 34.3419908 36.5638988 81.99 36.5638988 81.99 25.6902882 34.3419908 25.6902882 34.3419908 0"></polygon>
+        </g>
+    </g>
+</svg>

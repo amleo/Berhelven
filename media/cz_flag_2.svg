@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="circle-clip-60">
+      <circle cx="30" cy="30" r="30" />
+    </clipPath>
+  </defs>
+
+  <!-- Grupa z nałożoną maską koła -->
+  <g clip-path="url(#circle-clip-60)">
+    <!-- Górny biały pas -->
+    <rect width="60" height="30" fill="#FFFFFF" />
+    <!-- Dolny czerwony pas -->
+    <rect y="30" width="60" height="30" fill="#D10E26" />
+    <!-- Niebieski klin (sięgający do środka, czyli x=30) -->
+    <polygon points="0,0 30,30 0,60" fill="#11457E" />
+  </g>
+</svg>
