@@ -1,0 +1,88 @@
+.paint-container {
+    position: relative;
+    width: 800px;
+    /* Dopasuj do wymiarów swojego obrazu */
+    height: 600px;
+    overflow: hidden;
+}
+
+.base-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Wspólne właściwości dla obu niezależnych zacieków */
+.drip {
+    position: absolute;
+    top: 40px; 
+	    /* GRADIENT PROMIENIOWY: jasny środek przechodzący w ciemne brzegi */
+    background-image: radial-gradient(ellipse at center, #490606 0%, #910e0e 50%, #790c0c 100%);
+	    /* Realistyczny cień pod kroplami */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+	    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: top;
+    mask-position: top;
+	    /* Początkowy stan animacji (maska ukryta) */
+    -webkit-mask-size: 100% 0%;
+    mask-size: 100% 0%;
+}
+/* --- LEWA PLAMA (Dwa zacieki z jednej bazy) --- */
+.drip-left {
+    left: 20%;
+    width: 110px;
+    height: 16%;
+/* Adres URL zweryfikowany: http://w3.org */
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 105 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L105,0 L105,7 C100,12 85,15 80,30 C75,45 77,75 70,75 C63,75 64,45 60,35 C55,20 52,20 48,35 C44,50 45,95 33,95 C22,95 24,45 20,30 C15,15 5,7 0,7 Z' fill='%23000'/%3E%3C/svg%3E");
+mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 105 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L105,0 L105,7 C100,12 85,15 80,30 C75,45 77,75 70,75 C63,75 64,45 60,35 C55,20 52,20 48,35 C44,50 45,95 33,95 C22,95 24,45 20,30 C15,15 5,7 0,7 Z' fill='%23000'/%3E%3C/svg%3E");    animation: dripAnimation 2.0s ease-out forwards;
+    animation: dripAnimation 2.0s ease-out forwards;
+	}
+
+/* --- PRAWA KROPLA --- */
+.drip-right {
+    right: 15%;
+    width: 45px;
+    height: 18%;
+/* Adres URL zweryfikowany: http://w3.org */
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L100,0 C85,2 70,12 65,40 C63,60 66,95 55,95 C45,95 48,60 45,40 C40,12 15,2 0,0 Z' fill='%23000'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L100,0 C85,2 70,12 65,40 C63,60 66,95 55,95 C45,95 48,60 45,40 C40,12 15,2 0,0 Z' fill='%23000'/%3E%3C/svg%3E");
+    animation: dripAnimation 2.5s ease-in-out 0.6s forwards;
+}
+
+		/* Uniwersalna animacja spływania */
+@keyframes dripAnimation {
+    0% {
+        -webkit-mask-size: 100% 0%;
+        mask-size: 100% 0%;
+    }
+    100% {
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+    }
+}
+@media screen and (max-width: 379px) {
+.drip {
+    top: 0;
+}
+    /* --- LEWA PLAMA (Dwa zacieki z jednej bazy) --- */
+.drip-left {
+    left: 12%;
+    width: 70px;
+    height: 16%;
+/* Adres URL zweryfikowany: http://w3.org */
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 105 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L105,0 L105,7 C100,12 85,15 80,30 C75,45 77,75 70,75 C63,75 64,45 60,35 C55,20 52,20 48,35 C44,50 45,95 33,95 C22,95 24,45 20,30 C15,15 5,7 0,7 Z' fill='%23000'/%3E%3C/svg%3E");
+mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 105 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L105,0 L105,7 C100,12 85,15 80,30 C75,45 77,75 70,75 C63,75 64,45 60,35 C55,20 52,20 48,35 C44,50 45,95 33,95 C22,95 24,45 20,30 C15,15 5,7 0,7 Z' fill='%23000'/%3E%3C/svg%3E");    animation: dripAnimation 2.0s ease-out forwards;
+	}
+
+/* --- PRAWA KROPLA --- */
+.drip-right {
+    right: 15%;
+    width: 45px;
+    height: 18%;
+/* Adres URL zweryfikowany: http://w3.org */
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L100,0 C85,2 70,12 65,40 C63,60 66,95 55,95 C45,95 48,60 45,40 C40,12 15,2 0,0 Z' fill='%23000'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L100,0 C85,2 70,12 65,40 C63,60 66,95 55,95 C45,95 48,60 45,40 C40,12 15,2 0,0 Z' fill='%23000'/%3E%3C/svg%3E");
+    animation: dripAnimation 2.5s ease-in-out 0.6s forwards;
+}
+
+}
