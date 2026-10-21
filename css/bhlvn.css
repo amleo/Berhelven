@@ -14,6 +14,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: UnifrakturMaguntia-Regular;
+  scroll-behavior:smooth;
 }
 /* ponizej - padding html { scroll-padding-top: 100px; }
 [id] { scroll-margin-top: 100px; } */
@@ -438,7 +439,36 @@ label {
 .pseudonym{
   color: #e42626 !important;
 }
+/* .parallax {
+  background-image: url("../media/image_mainGrad.jpg");
+  min-height: 0;
+  aspect-ratio: 1351 / 957;
+  max-width: none;
+  background-origin: content-box;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+.parallax {
+  background-image: url("../media/image_mainGrad.jpg");
+  min-height: 0;                 /* remove the 60vh minimum */
+  aspect-ratio: 1351 / 957;
+  background-origin: content-box;
+  background-size: 60% auto;    /* scale to width, preserve proportions */
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/*MEEEDDDIIIAAAA*/
 @media screen and (max-width: 991px) {
+  html { scroll-padding-top: 80px; }
+  [id] { scroll-margin-top: 80px; }
+
   .hlv-container {
     max-width: 728px;
   }
@@ -479,7 +509,27 @@ label {
     max-height: 100%;
   }
 }
+@media screen and (max-width: 240px) {
+  .hlv-container {
+    max-width: none;
+  }
 
+  .hlv-col {
+    width: 100%;
+  }
+.image-1 {
+    /* padding-top: 40px; */
+    padding-left: 0px;
+    max-height: 100%;
+  }
+.parallax {
+  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-position-x: center;
+  background-position-y: 1vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+}
 @media screen and (max-width: 479px) {
   .hlv-container {
     max-width: none;
@@ -493,7 +543,13 @@ label {
     padding-left: 0px;
     max-height: 100%;
   }
-
+.parallax {
+  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-position-x: center;
+  background-position-y: 15vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 }
 
 .hlv-slider {
@@ -531,6 +587,14 @@ label {
   .hlv-nav-brand {
     padding-left: 16px;
   }
+.parallax {
+  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-position-x: center;
+  background-position-y: 15vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 }
 
 .hlv-nav-brand {
@@ -883,8 +947,8 @@ html { scroll-padding-top: 50px; }
   max-width: 1440px;
   color: #fff;
   margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   font-weight: 400;
   line-height: 28px;
 }
@@ -1354,12 +1418,12 @@ html { scroll-padding-top: 50px; }
 
 @media screen and (max-width: 991px) {
   .intro {
-    /* margin-top: 100px; */
+    /* margin-top: 0px; */
     padding-top: 0;
     padding-bottom: 20px;
   }
   .introTop {
-    margin-top: 100px;
+    margin-top: 90px;
     padding-top: 0;
     padding-bottom: 20px;
   }
@@ -1571,16 +1635,35 @@ html { scroll-padding-top: 50px; }
   .notify_block_survey {
     text-align: center;
   }
+.parallax {
+  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-position-x: center;
+  background-position-y: 12vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+}
+@media screen and (max-width: 1500px) {
+.parallax {
+  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-position-x: center;
+  background-position-y: 12vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  html { scroll-padding-top: 40px; }
+  [id] { scroll-margin-top: 40px; }
+
   .intro {
     /* margin-top: 100px; */
     padding-top: 0;
     padding-bottom: 60px;
   }
   .introTop {
-    /* margin-top: 100px; */
+    margin-top: 40px;
     padding-top: 0;
     padding-bottom: 60px;
   }
@@ -1731,7 +1814,7 @@ html { scroll-padding-top: 50px; }
     padding-bottom: 40px;
   }
   .introTop {
-    margin-top: 75px;
+    margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 40px;
   }

@@ -86,3 +86,8 @@ mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
 }
 
 }
+@media screen and ( max-width: 991px) {
+    .drip {
+    top: 0;
+}
+}

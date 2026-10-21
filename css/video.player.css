@@ -63,22 +63,6 @@
     accent-color: #3498db;
     /* Kolor suwaka możesz zmienić na swoją zmienną CSS */
 }
-@media screen and (max-width: 479px) {
-    .hero-video-player {
-        margin-left: 2vh;
-    }
-
-    .video-container {
-        position: relative;
-        width: 100%;
-        /* max-width: 400px; */
-
-    }
-    .custom-controls {
-    left: 50%;
-    }
-
-}
 @media screen and (max-width: 771px) {
     .hero-video-player {
         margin-left: 3vh;
@@ -92,4 +76,25 @@
     left: 50%;
     }
 
+}
+@media screen and (max-width: 479px) {
+    .hero-video-player {
+        margin-left: 3vh;
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        /* max-width: 400px; */
+
+    }
+    .custom-controls {
+    left: 50%;
+    }
+
+}
+@media screen and (max-width: 240px) {
+    .hero-video-player {
+        margin-left: 2vh;
+    }
 }

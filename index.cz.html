@@ -111,6 +111,26 @@
                 $(".lang_switch").removeClass("lang_switch_shrink");
             }
         });
+document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      // Adjust the 70 value to match your fixed Bootstrap navbar height
+      const navbarHeight = 70; 
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
     </script>
 
 </head>
@@ -158,7 +178,7 @@
                             <a href="#discography" class="navlink hlv-nav-link">Music</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="https://my.bigcartel.com/signup/gold" class="navlink hlv-nav-link">Merch/shop</a>
+                            <a href="https://aman-lee.bigcartel.com/" class="navlink hlv-nav-link">Merch/shop</a>
                         </li>
 
                         <li class="nav-item active">
@@ -195,8 +215,8 @@
 -->
     <div id="HomeLogo" class="introTop">
         <div class="container_1 hlv-container">
-            <div class="column_1_a hlv-col hlv-col-stack image-1"><img src="media/image_mainGrad.jpg" alt="image"
-                        class="image-1" />
+            <div class="column_1_a hlv-col hlv-col-stack image-1 parallax">
+                <!-- <img src="media/image_mainGrad.jpg" alt="image" class="image-1" /> -->
 			<div class="drip drip-left"></div>
 			<div class="drip drip-right"></div>
 
@@ -747,6 +767,7 @@
                 hidePopupAndSave();
             }
         });
+
     </script>
 
 </body>
