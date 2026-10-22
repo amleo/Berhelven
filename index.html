@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/video.player.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/popup.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/bloody.css" rel="stylesheet" type="text/css" />
+
     <!-- <link href="https://fonts.googleapis.com" rel="preconnect" /> -->
     <!-- <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" /> -->
     <script src="js/window.js" type="text/javascript"></script>
@@ -135,8 +136,9 @@
                 <a href="#Home" class="navbar-brand bhlvn hlv-nav-brand hlv--current"
                     style="justify-content: space-between;"><img src="media/bhlvn_logo.jpg" alt="Berhelven Logo"
                         class="brand"></a>
-                <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                    aria-expanded="false" aria-label="Toggle navigation" style="color: #000000;">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation" 
+                    style="background-color: #5E5E5E;font-size: 0.8rem;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -160,10 +162,10 @@
                             <a href="https://aman-lee.bigcartel.com/" class="navlink hlv-nav-link">Merch/shop</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="#Contact" class="navlink hlv-nav-link">Contact</a>
+                            <a href="#Friends" class="navlink hlv-nav-link">Friends</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="#Friends" class="navlink hlv-nav-link">Friends</a>
+                            <a href="#Contact" class="navlink hlv-nav-link">Contact</a>
                         </li>
                         <li class="nav-item active">
                             <a href="https://www.facebook.com/berhelvenband/" target="_blank"
@@ -195,8 +197,9 @@
 ***************************
 -->
     <div id="HomeLogo" class="introTop">
-        <div class="container_1 hlv-container">
-            <div class="column_1_a hlv-col hlv-col-stack image-1"><img src="media/image_mainGrad.jpg" alt="image"
+        <div class="logo-container">
+            <div class="column_1_a hlv-col hlv-col-stack image-1">
+                <img src="media/image_mainGrad.jpg" alt="image"
                         class="base-image" />
             </div>
         </div>
@@ -204,33 +207,27 @@
     <div id="Home" class="intro">
         <div class="container_1 hlv-container">
             <div class="columns_1 hlv-row hero-video-layout">
-            <div class="column_1_a hlv-col hlv-col-6 hlv-col-stack">
+                <div class="column_1_a hlv-col hlv-col-6 hlv-col-stack">
                 <!-- <img src="media/image_main.jpg" alt="image"
                         width="791" class="image-1" /> -->
 
-<div class="video-container">
-  <!-- Usunęliśmy atrybut controls -->
-  <video class="hero-video-player" loop muted playsinline>
-    <source src="media/Bytom2026vid.mp4" type="video/mp4">
-    Twój odtwarzacz nie obsługuje wideo.
-  </video>
+                    <div class="video-container">
+                <!-- No controls -->
+                        <video class="hero-video-player" loop muted playsinline>
+                            <source src="media/Bytom2026vid.mp4" type="video/mp4">
+                            Twój odtwarzacz nie obsługuje wideo.
+                        </video>
 
-  <!-- pasek sterowania pod spodem -->
-  <div class="custom-controls">
-    <button class="play-btn" id="playBtn">▶ Play</button>
-    <div class="volume-container">
-      <span class="volume-icon">🔊</span>
-      <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.1" value="0">
-    </div>
-  </div>
-</div>
-
-
-            <!-- <video class="hero-video-player" controls>
-                    <source src="media/Bytom2026vid.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-            </video> -->
-            </div>
+                <!-- Custom Controls -->
+                        <div class="custom-controls">
+                            <button class="play-btn" id="playBtn">▶ Play</button>
+                            <div class="volume-container">
+                                <span class="volume-icon">🔊</span>
+                                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.1" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="column_1_b hlv-col hlv-col-6 hlv-col-stack">
                     <div class="intro_block">
                         <h1 class="h1_1 hdrGothicFont"><strong>Berhelven</strong><br>
@@ -250,13 +247,13 @@
             </div>
         </div>
     </div>
-
     <div id="about" class="band-info">
-        <div class="container_2 hlv-container">
-            <div class="columns_2 hlv-row">
-                <div class="column_2_a hlv-col hlv-col-6 hlv-col-stack">
-                    <h1 class="hdrGothicFont h1_2">Death metal from Prague <strong class="bold-text-3"></strong></h1>
-                    <p class="p_2">
+        <div class="container_1 hlv-container">
+            <div class="columns_1 hlv-row">
+                <div class="column_1_a hlv-col hlv-col-6 hlv-col-stack">
+                    <div class="intro_block">
+                    <h1 class="hdrGothicFont h1_1_1">Death metal from Prague <strong class="bold-text-3"></strong></h1>
+                    <p class="p_1">
                         <strong style="color: #a01158;">Fenix</strong> 
                         <strong style="color: #630a36;">aka Anna Fénešová</strong> Drums (2024), Vocals, Keyboards (2024-present)<br>
                         See also: Triskelia<br>
@@ -271,9 +268,12 @@
                         <strong style="color: #630a36;">aka David Vřešťál</strong> Guitars (2024-present)<br>
                         See also: Status Praesents<br>
                         <strong style="color: #a01158;">Goreman</strong>
-                        <strong style="color: #630a36;">aka Tobiáš Gůra</strong> Guitars (2026-present)<br /><br /></p>
+                        <strong style="color: #630a36;">aka Tobiáš Gůra</strong> Guitars (2026-present)<br /><br />
+                    </p>
+                    </div>
                 </div>
-                <div class="column_2_b hlv-col hlv-col-6 hlv-col-stack"><img src="media/BerhelvenBand.jpg"
+                    <div class="column_1_b hlv-col hlv-col-6 hlv-col-stack">
+                    <img src="media/BerhelvenBand.jpg"
                         sizes="(max-width: 479px) 96vw, (max-width: 767px) 60vw, (max-width: 991px) 58vw, (max-width: 1919px) 46vw, 554px"
                         width="554" alt="Image"
                         srcset="media/BerhelvenBand-p-500.jpg 500w, media/BerhelvenBand.jpg 562w" class="image_2" />
@@ -282,38 +282,13 @@
         </div>
     </div>
 
-
-    <!-- <div id="about" class="band-info">
-        <div class="container_2 hlv-container">
-            <div class="columns_2 hlv-row">
-                <div class="column_2_a hlv-col hlv-col-6 hlv-col-stack"><img src="media/BerhelvenBand.jpg"
-                        sizes="(max-width: 479px) 96vw, (max-width: 767px) 60vw, (max-width: 991px) 58vw, (max-width: 1919px) 46vw, 554px"
-                        width="554" alt="Image"
-                        srcset="media/BerhelvenBand-p-500.jpg 500w, media/BerhelvenBand.jpg 562w" class="image_2" />
-                </div>
-                <div class="column_2_b hlv-col hlv-col-6 hlv-col-stack">
-                    <h1 class="hdrGothicFont h1_2">Death metal from Prague <strong class="bold-text-3"></strong></h1>
-                    <p class="p_2">Natálie Němcová Bass (2024-present)<br>
-                        See also: ex-Eternal Night, Endless Rain, ex-Begining Disease, ex-Jinovatka, ex-Skibidi Cock
-                        Destroyer (live), ex-Trýzeň (live)<br>
-                        Anna Fénešová Drums (2024), Vocals, Keyboards (2024-present)<br>
-                        See also: Triskelia<br>
-                        David Vřešťál Guitars (2024-present)<br>
-                        See also: Status Praesents<br>
-                        Adam Urban Drums (2025-present)<br>
-                        See also: Ballad of Epona, Demissary, Leveth, The Pain Inside<br>
-                        Tobiáš Gůra Guitars (2026-present)<br /><br /></p>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div id="discover_bhlvn" class="intro3">
         <div class="container_3 hlv-container">
             <div class="columns_3 hlv-row">
                 <div class="column_3_a hlv-col hlv-col-6 hlv-col-stack"><img src="media/slide3.jpg" alt="image"
                         class="image_3" /></div>
                 <div class="column_3_b hlv-col hlv-col-6 hlv-col-stack">
-                    <h1 class="h1_3 center hdrGothicFont"><strong>The 3 greatest universes</strong> in our galaxy</h1>
+                    <h1 class="h1_1_1 center hdrGothicFont"><strong>Upcomming shows</strong><br> In our galaxy</h1>
                     <ul role="list" class="list_5_reason">
                         <li class="_5_reason_item">Discworld - The colour of Magic</li>
                         <li class="_5_reason_item">Penny Market - Nakupujte hezky česky</li>
@@ -408,7 +383,7 @@
                                 opacity:1" class="modal-container"><img src="media/AnnaFenesova.jpg" loading="lazy"
                                         alt="Photo" sizes="100vw"
                                         srcset="media/AnnaFenesova-p-500.jpg 500w, media/AnnaFenesova.jpg 600w"
-                                        class="team_img" />
+                                        class="team_img_big" />
                                     <div class="name_team">Anna Fénešová</div>
                                     <div class="function_team">Leading vocals, Drums (2024), Keyboards (2024-present)
                                     </div>
@@ -439,7 +414,7 @@
                                     class="modal-container"><img src="media/NatalieNemcova.jpg" loading="lazy"
                                         alt="Photo" sizes="100vw"
                                         srcset="media/NatalieNemcova-p-500.jpg 500w, media/NatalieNemcova.jpg 600w"
-                                        class="team_img" />
+                                        class="team_img_big" />
                                     <div class="name_team">Natálie Němcová</div>
                                     <div class="function_team">Bassist</div>
                                     <p class="description-modal">Natálie Němcová Bass (2024-present)
@@ -473,7 +448,7 @@
                                 opacity:1" class="modal-container"><img src="media/AdamUrban.jpg" loading="lazy"
                                         alt="Photo" sizes="100vw"
                                         srcset="media/AdamUrban-p-500.jpg 500w, media/AdamUrban.jpg 600w"
-                                        class="team_img" />
+                                        class="team_img_big" />
                                     <div class="name_team">Adam Urban</div>
                                     <div class="function_team">Drummer (2025-present)</div>
                                     <p class="description-modal">See also: Ballad of Epona, Demissary, Leveth, The Pain
@@ -506,7 +481,7 @@
                                         opacity:1" class="modal-container"><img src="media/DavidVrestal.jpg" loading="lazy"
                                             alt="Photo" sizes="100vw"
                                             srcset="media/DavidVrestal-p-500.jpg 500w, media/DavidVrestal.jpg 600w"
-                                            class="team_img" />
+                                            class="team_img_big" />
                                         <div class="name_team">David Vřešťál</div>
                                         <div class="function_team">Guitars (2024-present)</div>
                                         <p class="description-modal">See also: Status Praesents</p><a role="button"
@@ -537,7 +512,7 @@
                                 opacity:1" class="modal-container"><img src="media/TobiasGora.jpg" loading="lazy"
                                     alt="Photo" sizes="100vw"
                                     srcset="media/TobiasGora-p-500.jpg 500w, media/TobiasGora.jpg 600w"
-                                    class="team_img" />
+                                    class="team_img_big" />
                                 <div class="name_team">Tobiáš Gůra</div>
                                 <div class="function_team">Guitars (2026-present)</div>
                                 <p class="description-modal">Guitars (2026-present)</p><a role="button" href="#0"
@@ -571,16 +546,14 @@
                             <div class="function_team">The IT guy ;) </div>
                             <div id="personAmadeuszL" aria-labelledby="Popup Modal" role="dialog" aria-modal="true"
                                 style="opacity:0" aria-hidden="false" class="modal-wrapper-all">
-                                <div style="-webkit-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                -moz-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                -ms-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                opacity:1" class="modal-container"><img src="media/FerdaMravenec.jpg" loading="lazy"
+                                <div class="modal-container"><img src="media/FerdaMravenec.jpg" loading="lazy"
                                         alt="Photo" sizes="100vw"
                                         srcset="media/FerdaMravenec-p-500.jpg 500w, media/FerdaMravenec.jpg 600w"
-                                        class="team_img" />
+                                        class="team_img_big" />
                                     <div class="name_team">Amadeusz aka Ferda Mravenec</div>
-                                    <div class="function_team">Leading scriptor. Code scriptor.
+                                    <div class="function_team">Leading scriptor. Code scriptor. 
+                                        <br>Many years ago strings began to vibrate.
+                                        <br>And the sound coulb be heard.
                                     </div>
                                     <p class="description-modal">Leading scriptor. Code scriptor.</p><a
                                         role="button" href="#0" class="modal-close_btn" id="personAmadeuszLClose"><span
@@ -597,6 +570,7 @@
                 </div>
             </div>
         </div>
+    </div>
     <div id="Contact" class="contact">
         <div class="container_contact hlv-container">
             <h1 class="h1_contact hdrGothicFont"><strong>Contact</strong></h1>

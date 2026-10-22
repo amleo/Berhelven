@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'UnifrakturMaguntia-Regular';
   src: url("UnifrakturMaguntia-Regular.ttf");
@@ -384,6 +385,7 @@ label {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 60px;
 }
 
 .hlv-container:before,
@@ -398,6 +400,33 @@ label {
 }
 
 .hlv-container .hlv-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.logo-container {
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: block;
+}
+
+.logo-container:before,
+.logo-container:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.logo-container:after {
+  clear: both;
+}
+
+.logo-container {
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -472,7 +501,9 @@ label {
   .hlv-container {
     max-width: 728px;
   }
-
+  .logo-container {
+    max-width: 728px;
+  }
   .hlv-col-stack {
     width: 100%;
     left: auto;
@@ -493,7 +524,8 @@ label {
 @media screen and (max-width: 767px) {
 
   .hlv-row,
-  .hlv-container .hlv-row {
+  .hlv-container .hlv-row 
+  .logo-container{
     margin-left: 0;
     margin-right: 0;
   }
@@ -510,7 +542,7 @@ label {
   }
 }
 @media screen and (max-width: 240px) {
-  .hlv-container {
+  .hlv-container .logo-container {
     max-width: none;
   }
 
@@ -523,7 +555,7 @@ label {
     max-height: 100%;
   }
 .parallax {
-  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-size: 90% auto;    /* scale to width, preserve proportions */
   background-position-x: center;
   background-position-y: 1vh;
   background-repeat: no-repeat;
@@ -531,7 +563,7 @@ label {
   }
 }
 @media screen and (max-width: 479px) {
-  .hlv-container {
+  .hlv-container .logo-container {
     max-width: none;
   }
 
@@ -588,7 +620,7 @@ label {
     padding-left: 16px;
   }
 .parallax {
-  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-size: 90% auto;    /* scale to width, preserve proportions */
   background-position-x: center;
   background-position-y: 15vh;
   background-repeat: no-repeat;
@@ -802,7 +834,7 @@ html { scroll-padding-top: 50px; }
 .band-info {
   background-image: var(--bckImg);
   padding-top: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   font-family: Lato, sans-serif;
 }
 
@@ -848,7 +880,7 @@ html { scroll-padding-top: 50px; }
   letter-spacing: .03em;
   background-image: linear-gradient(var(--bckGradFrom) 20%, var(--bckGradTo) 81%);
   padding-top: 10px;
-  padding-bottom: 190px;
+  padding-bottom: 100px;
   font-family: Lato, sans-serif;
 }
 
@@ -865,7 +897,7 @@ html { scroll-padding-top: 50px; }
   letter-spacing: .03em;
   background-color: var(--bckGradFrom);
   padding-top: 40px;
-  padding-bottom: 160px;
+  padding-bottom: 60px;
   font-family: Lato, sans-serif;
 }
 
@@ -887,7 +919,7 @@ html { scroll-padding-top: 50px; }
 .container_team {
   max-width: 1440px;
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .team_img {
@@ -896,7 +928,12 @@ html { scroll-padding-top: 50px; }
   border-radius: 50%;
   padding: 10px;
 }
-
+.team_img_big {
+  /* width: 170px; */
+  border: 2px double rgba(255, 255, 255, .35);
+  border-radius: 6%;
+  padding: 2px;
+}
 .name_team {
   max-width: 360px;
   color: #fff;
@@ -1054,7 +1091,7 @@ html { scroll-padding-top: 50px; }
   text-align: center;
   letter-spacing: .03em;
   background-color: var(--bckGradFrom);
-  padding: 40px 40px 160px;
+  padding: 5px 5px 160px;
   font-family: Lato, sans-serif;
 }
 
@@ -1381,7 +1418,7 @@ html { scroll-padding-top: 50px; }
   .discography,
   .contact {
     padding-top: 10px;
-    padding-bottom: 190px;
+    padding-bottom: 60px;
   }
 
   .p_1 {
@@ -1390,7 +1427,7 @@ html { scroll-padding-top: 50px; }
 
   .team_short {
     padding-top: 10px;
-    padding-bottom: 190px;
+    padding-bottom: 150px;
   }
   .notify_block {
     display: block;
@@ -1414,7 +1451,19 @@ html { scroll-padding-top: 50px; }
     padding-right: 0;
     text-decoration: underline;
   }
-}
+  .container_discography{
+    margin-top: 20px;
+  }
+.logo-container {
+  max-width: none;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-top: 0px;
+  /* padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  display: block;
+}}
 
 @media screen and (max-width: 991px) {
   .intro {
@@ -1636,7 +1685,7 @@ html { scroll-padding-top: 50px; }
     text-align: center;
   }
 .parallax {
-  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-size: 90% auto;    /* scale to width, preserve proportions */
   background-position-x: center;
   background-position-y: 12vh;
   background-repeat: no-repeat;
@@ -1645,7 +1694,7 @@ html { scroll-padding-top: 50px; }
 }
 @media screen and (max-width: 1500px) {
 .parallax {
-  background-size: 100% auto;    /* scale to width, preserve proportions */
+  background-size: 90% auto;    /* scale to width, preserve proportions */
   background-position-x: center;
   background-position-y: 12vh;
   background-repeat: no-repeat;
@@ -1853,7 +1902,10 @@ html { scroll-padding-top: 50px; }
     font-size: 40px;
     line-height: 125%;
   }
-
+  .h1_1_1 {
+    font-size: 32px;
+    line-height: 125%;
+  }
   .container_discography {
     padding-left: 0px;
     padding-right: 0;
@@ -2026,8 +2078,8 @@ html { scroll-padding-top: 50px; }
   }
 
   .team_short {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding-bottom: 60px;
     padding-left: 0px;
     padding-right: 0;
@@ -2058,7 +2110,7 @@ html { scroll-padding-top: 50px; }
   .h1_center {
     text-align: center;
     padding-left: 0px;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.25;
   }
 
