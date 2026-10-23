@@ -426,11 +426,6 @@ label {
   clear: both;
 }
 
-.logo-container {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
 .hlv-row:before,
 .hlv-row:after {
   content: " ";
@@ -468,6 +463,15 @@ label {
 .pseudonym{
   color: #e42626 !important;
 }
+.logo-image {
+    display: block;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* .parallax {
   background-image: url("../media/image_mainGrad.jpg");
   min-height: 0;
